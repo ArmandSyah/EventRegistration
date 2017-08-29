@@ -3,6 +3,7 @@
 eventsApp.controller('EventController',
     function EventController($scope) {
 
+        $scope.sortorder = '-upvoteCount';
         $scope.snippet = '<span style="color: red;>He yo!</span>"'
         $scope.boolean = true;
         $scope.mystyle = {color:'red'};
@@ -18,21 +19,21 @@ eventsApp.controller('EventController',
             sessions: [
                 {
                     name: 'JS Event',
-                    duration: '1h 40min',
+                    duration: 1,
                     prof: 'Burak Obama',
                     difficulty: 'Advanced',
                     upvoteCount: 0
                 },
                 {
                     name: 'Java Event',
-                    duration: '10min',
+                    duration: 2,
                     prof: 'John Doe',
                     difficulty: 'Insane',
                     upvoteCount: 0
                 },
                 {
                     name: 'Donald Glover Appreciation',
-                    duration: '24hr',
+                    duration: 4,
                     prof: 'Donald Glover',
                     difficulty: 'Introductory',
                     upvoteCount: 0
