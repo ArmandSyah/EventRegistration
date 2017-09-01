@@ -4,7 +4,6 @@ eventsApp.controller('EventController',
     function EventController($scope, eventData, $anchorScroll) {
 
         $scope.sortorder = '-upvoteCount';
-        $scope.snippet = '<span style="color: red;>He yo!</span>"'
         $scope.boolean = true;
         $scope.mystyle = {
             color: 'red'
