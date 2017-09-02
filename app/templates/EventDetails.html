@@ -1,9 +1,5 @@
 <div>
-    <h2 ng-show="boolean">Show</h2>
-    <h2 ng-hide="boolean">Hide</h2>
-    <button type="button" class="btn btn-primary" ng-click="scrollToSession()">
-        Scroll
-    </button>
+
     <div class="row">
         <div class="spann11" >
             <h2 ng-style="mystyle">{{event.name | uppercase}}</h2>
@@ -29,7 +25,7 @@
 
 
         <ul class="thumbnails">
-            <li ng-repeat="session in event.sessions |orderBy: sortorder id = "session{{session.id}}">
+            <li ng-repeat="session in event.sessions |orderBy: sortorder">
 
                 <div class="row session">
 
